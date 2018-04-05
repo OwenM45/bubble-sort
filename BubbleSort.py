@@ -37,17 +37,21 @@ for line in data:
 
                 #sets ordered to false so the computer knows to loop again
                 ordered = False                
-                
+        #checks if the list has ended        
         except:
+            #adds one to loop 
             loops += 1
+            #if its ordered print the result and break the loop
             if ordered == True:
                 print(nums)
                 print("It took " + str(loops) + " loops to sort")
                 print("-------------------------------------------")
                 break
+            #if not restart the loop
             else:
                 i = -1
                 ordered = True
+        #iterate the loop
         i += 1
     
     
